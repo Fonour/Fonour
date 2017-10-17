@@ -1,0 +1,51 @@
+﻿/*#region Alerts*/
+.alert {
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: @white;
+    border-width: 0;
+    border-left-width: 5px;
+    padding: 10px;
+    border-radius: 0;
+
+    .close {
+        top: 0;
+        right: -5px;
+        line-height: 16px;
+        color: @carbon;
+    }
+
+    &.radius-bordered {
+        .border-radius(3px);
+    }
+
+    &.alert-shadowed {
+        .box-shadow(0 1px 2px @black2);
+    }
+
+    &.alert-heading {
+        font-weight: 600;
+    }
+
+    &.alert-danger {
+        border-color: @red;
+        background: @lightred;
+    }
+
+    &.alert-warning {
+        border-color: @yellow;
+        color: @lightcarbon;
+        background: #fff1a8;
+    }
+
+    &.alert-success {
+        border-color: @green;
+        background: @palegreen;
+    }
+
+    &.alert-info {
+        border-color: @sky;
+        background: @info;
+    }
+}
+/*#endregion Alerts*/

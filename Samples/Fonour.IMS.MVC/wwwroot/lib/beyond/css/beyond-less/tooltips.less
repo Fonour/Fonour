@@ -1,0 +1,1054 @@
+﻿/*#region ToolTips*/
+.tooltip {
+    &.in {
+        .opacity(1);
+    }
+
+    &.top .tooltip-arrow {
+        border-top-color: @darkcarbon;
+    }
+
+    &.right .tooltip-arrow {
+        border-right-color: @darkcarbon;
+    }
+
+    &.left .tooltip-arrow {
+        border-left-color: @darkcarbon;
+    }
+
+    &.bottom .tooltip-arrow {
+        border-bottom-color: @darkcarbon;
+    }
+}
+
+.tooltip-lg {
+    + .tooltip > .tooltip-inner {
+        font-size: 15px !important;
+    }
+}
+
+.tooltip-inner {
+    .border-radius(2px);
+    .box-shadow(1px 1px rgba(229,229,229,.5));
+    .transition(visibility 0,opacity .13s ease-in);
+    background-color: @darkcarbon;
+    border: 1px solid @darkcarbon;
+    color: #aaa;
+    padding: 8px 8px;
+    font-size: 13px;
+}
+
+.tooltip-white {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @white;
+            background-color: @white;
+            color: @darkcarbon;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @white;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @white;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @white;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @white;
+        }
+    }
+}
+
+.tooltip-whitesmoke {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @whitesmoke;
+            background-color: @whitesmoke;
+            color: @darkcarbon;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @whitesmoke;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @whitesmoke;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @whitesmoke;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @whitesmoke;
+        }
+    }
+}
+
+.tooltip-snow {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @snow;
+            background-color: @snow;
+            color: @darkcarbon;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @snow;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @snow;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @snow;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @snow;
+        }
+    }
+}
+
+.tooltip-seashell {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @seashell;
+            background-color: @seashell;
+            color: @darkcarbon;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @seashell;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @seashell;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @seashell;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @seashell;
+        }
+    }
+}
+
+.tooltip-ivory {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @ivory;
+            background-color: @ivory;
+            color: @darkcarbon;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @ivory;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @ivory;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @ivory;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @ivory;
+        }
+    }
+}
+
+.tooltip-platinum {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @platinum;
+            background-color: @platinum;
+            color: @darkcarbon;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @platinum;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @platinum;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @platinum;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @platinum;
+        }
+    }
+}
+
+.tooltip-lightgray {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @lightgray;
+            background-color: @lightgray;
+            color: @darkcarbon;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @lightgray;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @lightgray;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @lightgray;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @lightgray;
+        }
+    }
+}
+
+.tooltip-gray {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @gray;
+            background-color: @gray;
+            color: @darkcarbon;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @gray;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @gray;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @gray;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @gray;
+        }
+    }
+}
+
+.tooltip-darkgray {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @darkgray;
+            background-color: @darkgray;
+            color: @darkcarbon;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @darkgray;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @darkgray;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @darkgray;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @darkgray;
+        }
+    }
+}
+
+.tooltip-silver {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @silver;
+            background-color: @silver;
+            color: @white;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @silver;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @silver;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @silver;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @silver;
+        }
+    }
+}
+
+.tooltip-sonic-silver {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @sonic-silver;
+            background-color: @sonic-silver;
+            color: @white;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @sonic-silver;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @sonic-silver;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @sonic-silver;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @sonic-silver;
+        }
+    }
+}
+
+.tooltip-storm-cloud {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @storm-cloud;
+            background-color: @storm-cloud;
+            color: @white;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @storm-cloud;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @storm-cloud;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @storm-cloud;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @storm-cloud;
+        }
+    }
+}
+
+.tooltip-lightcarbon {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @lightcarbon;
+            background-color: @lightcarbon;
+            color: @white;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @lightcarbon;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @lightcarbon;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @lightcarbon;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @lightcarbon;
+        }
+    }
+}
+
+.tooltip-carbon {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @carbon;
+            background-color: @carbon;
+            color: @white;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @carbon;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @carbon;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @carbon;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @carbon;
+        }
+    }
+}
+
+.tooltip-slate-gray {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @slate-gray;
+            background-color: @slate-gray;
+            color: @white;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @slate-gray;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @slate-gray;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @slate-gray;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @slate-gray;
+        }
+    }
+}
+
+.tooltip-darkcarbon {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @darkcarbon;
+            background-color: @darkcarbon;
+            color: @white;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @darkcarbon;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @darkcarbon;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @darkcarbon;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @darkcarbon;
+        }
+    }
+}
+
+.tooltip-blue {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @blue;
+            background-color: @blue;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @blue;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @blue;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @blue;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @blue;
+        }
+    }
+}
+
+.tooltip-info {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @info;
+            background-color: @info;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @info;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @info;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @info;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @info;
+        }
+    }
+}
+
+.tooltip-sky {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @sky;
+            background-color: @sky;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @sky;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @sky;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @sky;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @sky;
+        }
+    }
+}
+
+.tooltip-primary {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @primary;
+            background-color: @primary;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @primary;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @primary;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @primary;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @primary;
+        }
+    }
+}
+
+.tooltip-azure {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @azure;
+            background-color: @azure;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @azure;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @azure;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @azure;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @azure;
+        }
+    }
+}
+
+.tooltip-blueberry {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @blueberry;
+            background-color: @blueberry;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @blueberry;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @blueberry;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @blueberry;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @blueberry;
+        }
+    }
+}
+
+.tooltip-palegreen {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @palegreen;
+            background-color: @palegreen;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @palegreen;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @palegreen;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @palegreen;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @palegreen;
+        }
+    }
+}
+
+.tooltip-success {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @success;
+            background-color: @success;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @success;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @success;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @success;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @success;
+        }
+    }
+}
+
+.tooltip-green {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @green;
+            background-color: @green;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @green;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @green;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @green;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @green;
+        }
+    }
+}
+
+.tooltip-lightyellow {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @lightyellow;
+            background-color: @lightyellow;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @lightyellow;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @lightyellow;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @lightyellow;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @lightyellow;
+        }
+    }
+}
+
+.tooltip-yellow {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @yellow;
+            background-color: @yellow;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @yellow;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @yellow;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @yellow;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @yellow;
+        }
+    }
+}
+
+.tooltip-warning {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @warning;
+            background-color: @warning;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @warning;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @warning;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @warning;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @warning;
+        }
+    }
+}
+
+.tooltip-gold {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @gold;
+            background-color: @gold;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @gold;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @gold;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @gold;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @gold;
+        }
+    }
+}
+
+.tooltip-orange {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @orange;
+            background-color: @orange;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @orange;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @orange;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @orange;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @orange;
+        }
+    }
+}
+
+.tooltip-lightred {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @lightred;
+            background-color: @lightred;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @lightred;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @lightred;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @lightred;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @lightred;
+        }
+    }
+}
+
+.tooltip-darkorange {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @darkorange;
+            background-color: @darkorange;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @darkorange;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @darkorange;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @darkorange;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @darkorange;
+        }
+    }
+}
+
+.tooltip-red {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @red;
+            background-color: @red;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @red;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @red;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @red;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @red;
+        }
+    }
+}
+
+.tooltip-pink {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @pink;
+            background-color: @pink;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @pink;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @pink;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @pink;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @pink;
+        }
+    }
+}
+
+.tooltip-darkpink {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @darkpink;
+            background-color: @darkpink;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @darkpink;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @darkpink;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @darkpink;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @darkpink;
+        }
+    }
+}
+
+.tooltip-danger {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @danger;
+            background-color: @danger;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @danger;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @danger;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @danger;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @danger;
+        }
+    }
+}
+
+.tooltip-magenta {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @magenta;
+            background-color: @magenta;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @magenta;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @magenta;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @magenta;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @magenta;
+        }
+    }
+}
+
+.tooltip-purple {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @purple;
+            background-color: @purple;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @purple;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @purple;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @purple;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @purple;
+        }
+    }
+}
+
+.tooltip-maroon {
+    + .tooltip {
+        > .tooltip-inner {
+            border: 1px solid @maroon;
+            background-color: @maroon;
+            color: #fff;
+        }
+
+        &.top .tooltip-arrow {
+            border-top-color: @maroon;
+        }
+
+        &.right .tooltip-arrow {
+            border-right-color: @maroon;
+        }
+
+        &.left .tooltip-arrow {
+            border-left-color: @maroon;
+        }
+
+        &.bottom .tooltip-arrow {
+            border-bottom-color: @maroon;
+        }
+    }
+}
+/*#endregion ToolTips*/

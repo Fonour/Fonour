@@ -1,0 +1,166 @@
+﻿/*#region Pricing Tables*/
+.pricing-container {
+    padding: 20px;
+    .text-shadow(gba(0, 0, 0, 0.2) 1px 1px 1px);
+
+    [class*="col-"] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .plan {
+        text-align: center;
+        /*font: 13px @number-fonts;*/
+        background: @white;
+        color: @slate-gray;
+        padding: 0;
+        width: 100%;
+        float: left;
+        _display: inline; /* IE6 double margin fix */
+        position: relative;
+        margin: 0 5px;
+        .box-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+        margin-bottom: 20px;
+        .background-image(linear-gradient(to top, @white, @seashell));
+
+        .header {
+            position: relative;
+            font-size: 20px;
+            font-weight: normal;
+            text-transform: uppercase;
+            padding: 15px;
+            margin: 0;
+            border-bottom: 3px solid;
+        }
+
+        .price {
+            font-size: 26px;
+            padding: 5px 5px 0;
+            background-color: @white;
+            .text-shadow(none);
+        }
+
+        .monthly {
+            font-size: 12px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: @darkgray;
+            background-color: @white;
+            padding-bottom: 10px;
+            .text-shadow(none);
+        }
+
+        ul {
+            margin: 20px 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                padding: 10px 0;
+                
+                p{
+                    margin:0 20px; 
+                    text-align:left;
+                }
+            }
+        }
+
+        .signup {
+            position: relative;
+            padding: 8px 17px;
+            color: @white;
+            font: bold 15px @number-fonts;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            background-color: @themeprimary;
+            .border-radius(3px);
+            .text-shadow(0 -1px 0 rgba(0,0,0,.15));
+            opacity: .9;
+            margin: 15px;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &:active {
+                .box-shadow(0 2px 2px rgba(0,0,0,.3) inset);
+            }
+        }
+    }
+
+    .popular-plan {
+        top: -20px;
+        padding: 0 0 25px;
+        .box-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+
+        .header {
+            padding: 35px 15px 15px;
+        }
+    }
+}
+
+.plan-circular {
+    margin: 10px auto;
+    text-align: center;
+
+    .plan-title {
+        color: @white;
+    }
+
+    .title-devider {
+        margin: 10px 40%;
+        border-color: @white;
+    }
+
+    .plan-body {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-color: @white;
+        border: 10px solid rgba(255,255,255,.3);
+        .border-radius(50%);
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif;
+
+        .plan-price {
+            position: absolute;
+            top: 33px;
+            right: 35px;
+            font-size: 40px;
+            color: @lightcarbon;
+        }
+
+        .plan-currency {
+            position: absolute;
+            top: 33px;
+            right: 80px;
+            font-size: 26px;
+            color: @silver;
+        }
+
+        .plan-month {
+            position: absolute;
+            top: 80px;
+            right: 38px;
+            font-size: 12px;
+            color: @darkgray;
+        }
+    }
+
+    .plan-tag {
+        width: 25px;
+        height: 40px;
+        .border-radius(2px);
+        margin: 0 auto;
+        margin-top: -15px;
+
+        .tag-icon {
+            margin-top: 20px;
+            font-size: 15px;
+            color: @white;
+        }
+    }
+}
+/*#endregion Pricing Tables*/

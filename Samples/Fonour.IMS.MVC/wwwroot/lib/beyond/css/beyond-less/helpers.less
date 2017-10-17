@@ -1,0 +1,61 @@
+﻿/*Firefox Outline bug*/
+button , a {
+    &:focus {
+        outline: none;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+}
+
+.image-circular {
+    .border-radius(50%) !important;
+}
+
+hr {
+    border-top: 1px solid @platinum;
+
+    &.wide {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+.position-relative {
+    position: relative;
+}
+
+.horizontal-space {
+    max-height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+    margin: 6px 0;
+
+    &.space-xs {
+        margin: 2px 0;
+    }
+
+    &.space-sm {
+        margin: 4px 0;
+    }
+
+    &.space-lg {
+        margin: 8px 0;
+    }
+
+    &.space-xl {
+        margin: 10px 0;
+    }
+
+    &.space-xxl {
+        margin: 12px 0;
+    }
+}
+
+.vertical-space {
+    max-width: 1px;
+    min-width: 1px;
+    overflow: hidden;
+    margin: 0 12px;
+}

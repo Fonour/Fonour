@@ -1,0 +1,661 @@
+﻿/*#region Tabs*/
+/*#region Tab Content*/
+.tab-content {
+    background-color: @snow;
+    padding: 16px 12px;
+    position: relative;
+    .box-shadow(1px 0 10px 1px rgba(0,0,0,.3));
+
+    &.no-padding {
+        padding: 0;
+    }
+
+    &.no-border {
+        border: 0;
+        padding: 12px;
+    }
+
+    &.radius-bordered {
+        .border-radius(3px);
+    }
+
+    &.tabs-flat {
+        .box-shadow(none);
+        border-top: 1px solid #e5e5e5;
+    }
+}
+/*#endregion Tab Content*/
+/*#region Tab*/
+.nav-tabs {
+    margin-bottom: 0;
+    margin-left: 0;
+    border: 0;
+    top: 2px;
+    background-color: @ivory;
+    .box-shadow(0 0 4px rgba(0,0,0,.3));
+
+
+    > li {
+        margin-bottom: -2px;
+        > a {
+            &:hover {
+                color: @darkcarbon;
+                background-color: transparent;
+                border-color: transparent;
+            }
+
+            &:active, &:focus {
+                outline: none !important;
+            }
+
+            &, &:focus {
+                border-radius: 0 !important;
+                color: @silver;
+                margin-right: -1px;
+                line-height: 12px;
+                position: relative;
+                z-index: 11;
+            }
+
+            > .badge {
+                padding: 0 4px;
+                line-height: 15px;
+                opacity: .75;
+                height: 16px;
+                min-width: 16px;
+            }
+
+            .fa, .glyphicon, .typcn, .wi {
+                opacity: .75;
+            }
+        }
+
+        &:first-child > a {
+            margin-left: 0;
+            border-left: 1px solid @snow;
+        }
+
+        &.active {
+
+            > a {
+                &, &:hover, &:focus {
+                    color: @darkcarbon;
+                    border: 0;
+                    border-top: 2px solid @themeprimary;
+                    border-bottom-color: transparent;
+                    background-color: @snow;
+                    z-index: 12;
+                    line-height: 16px;
+                    margin-top: -2px;
+                    box-shadow: 0 -2px 3px 0 rgba(0,0,0,0.15);
+                }
+
+
+                > .badge, > [class*="fa-"] {
+                    opacity: 1;
+                }
+            }
+        }
+        /*#region Colred Tab*/
+        &.active {
+            &.tab-white {
+                > a {
+                    border-color: @white !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @white;
+                    }
+                }
+            }
+
+            tab-snow {
+                > a {
+                    border-color: @snow !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @snow;
+                    }
+                }
+            }
+
+            &.tab-whitesmoke {
+                > a {
+                    border-color: @whitesmoke !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @whitesmoke;
+                    }
+                }
+            }
+
+            &.tab-seashell {
+                > a {
+                    border-color: @seashell !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @seashell;
+                    }
+                }
+            }
+
+            &.tab-ivory {
+                > a {
+                    border-color: @ivory !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @ivory;
+                    }
+                }
+            }
+
+            &.tab-platinum {
+                > a {
+                    border-color: @platinum !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @platinum;
+                    }
+                }
+            }
+
+            &.tab-lightgray {
+                > a {
+                    border-color: @lightgray !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @lightgray;
+                    }
+                }
+            }
+
+            &.tab-gray {
+                > a {
+                    border-color: @gray !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @gray;
+                    }
+                }
+            }
+
+            &.tab-darkgray {
+                > a {
+                    border-color: @darkgray !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @darkgray;
+                    }
+                }
+            }
+
+            &.tab-silver {
+                > a {
+                    border-color: @silver !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @silver;
+                    }
+                }
+            }
+
+            &.tab-sonic-silver {
+                > a {
+                    border-color: @sonic-silver !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @sonic-silver;
+                    }
+                }
+            }
+
+            &.tab-storm-cloud {
+                > a {
+                    border-color: @storm-cloud !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @storm-cloud;
+                    }
+                }
+            }
+
+            &.tab-lightcarbon {
+                > a {
+                    border-color: @lightcarbon !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @lightcarbon;
+                    }
+                }
+            }
+
+            &.tab-carbon {
+                > a {
+                    border-color: @carbon !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @carbon;
+                    }
+                }
+            }
+
+            &.tab-primary {
+                > a {
+                    border-color: @primary !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @primary;
+                    }
+                }
+            }
+
+            &.tab-slate-gray {
+                > a {
+                    border-color: @slate-gray !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @slate-gray;
+                    }
+                }
+            }
+
+            &.tab-darkcarbon {
+                > a {
+                    border-color: @darkcarbon !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @darkcarbon;
+                    }
+                }
+            }
+
+            &.tab-blue {
+                > a {
+                    border-color: @blue !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @blue;
+                    }
+                }
+            }
+
+            &.tab-info {
+                > a {
+                    border-color: @info !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @info;
+                    }
+                }
+            }
+
+            &.tab-sky {
+                > a {
+                    border-color: @sky !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @sky;
+                    }
+                }
+            }
+
+            &.tab-primary {
+                > a {
+                    border-color: @primary !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @primary;
+                    }
+                }
+            }
+
+            &.tab-primary {
+                > a {
+                    border-color: @primary !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @primary;
+                    }
+                }
+            }
+
+            &.tab-blueberry {
+                > a {
+                    border-color: @blueberry !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @blueberry;
+                    }
+                }
+            }
+
+            &.tab-palegreen {
+                > a {
+                    border-color: @palegreen !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @palegreen;
+                    }
+                }
+            }
+
+            &.tab-success {
+                > a {
+                    border-color: @success !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @success;
+                    }
+                }
+            }
+
+            &.tab-green {
+                > a {
+                    border-color: @green !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @green;
+                    }
+                }
+            }
+
+            &.tab-lightyellow {
+                > a {
+                    border-color: @lightyellow !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @lightyellow;
+                    }
+                }
+            }
+
+            &.tab-yellow {
+                > a {
+                    border-color: @yellow !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @yellow;
+                    }
+                }
+            }
+
+            &.tab-warning {
+                > a {
+                    border-color: @warning !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @warning;
+                    }
+                }
+            }
+
+            &.tab-gold {
+                > a {
+                    border-color: @gold !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @gold;
+                    }
+                }
+            }
+
+            &.tab-orange {
+                > a {
+                    border-color: @orange !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @orange;
+                    }
+                }
+            }
+
+            &.tab-lightred {
+                > a {
+                    border-color: @lightred !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @lightred;
+                    }
+                }
+            }
+
+            &.tab-darkorange {
+                > a {
+                    border-color: @darkorange !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @darkorange;
+                    }
+                }
+            }
+
+            &.tab-red {
+                > a {
+                    border-color: @red !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @red;
+                    }
+                }
+            }
+
+            &.tab-pink {
+                > a {
+                    border-color: @pink !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @pink;
+                    }
+                }
+            }
+
+            &.tab-danger {
+                > a {
+                    border-color: @danger !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @danger;
+                    }
+                }
+            }
+
+            &.tab-magenta {
+                > a {
+                    border-color: @magenta !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @magenta;
+                    }
+                }
+            }
+
+            &.tab-purple {
+                > a {
+                    border-color: @purple !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @purple;
+                    }
+                }
+            }
+
+            &.tab-maroon {
+                > a {
+                    border-color: @maroon !important;
+
+                    > .fa, .glyphicon, .typcn, .wi {
+                        color: @maroon;
+                    }
+                }
+            }
+        }
+        /*#endregion Colred Tab*/
+    }
+
+    &.nav-justified {
+        margin-bottom:-2px;
+        > li {
+            > a {
+                border: none;
+                margin-top: -2px;
+
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        & > .active {
+            & > a {
+                &, &:hover, &:focus {
+                    border: 0;
+                    border-top: 2px solid @themeprimary;
+                    background-color: @snow;
+                }
+            }
+        }
+    }
+
+    .dropdown-menu {
+        margin-top: -3px;
+    }
+
+    &.tabs-flat {
+        .box-shadow(none);
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+.tabs-below {
+    > .nav-tabs {
+        top: auto;
+        margin-bottom: 0;
+        margin-top: -1px;
+        border-bottom-width: 0;
+
+        li {
+            &.active {
+                > a {
+                    &, &:hover, &:focus {
+                        border-top-width: 1px;
+                        border-bottom: 2px solid @blue;
+                        border-top-color: transparent;
+                        margin-top: 0;
+                        .box-shadow(0 2px 3px 0 rgba(0,0,0,0.15));
+                    }
+                }
+            }
+        }
+
+        &.nav-justified {
+            & > li {
+                & > a {
+                    margin-bottom: -2px;
+                }
+            }
+
+            & > .active {
+                & > a {
+                    &, &:hover, &:focus {
+                        border: 0;
+                        border-bottom: 2px solid @blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tabs-left {
+    > .nav-tabs {
+        top: auto;
+        margin-bottom: 0;
+        float: left;
+
+        > li {
+            float: none;
+
+            > a {
+                &, &:focus, &:hover {
+                    margin: 0 -1px 0 0;
+                }
+            }
+
+            &.active {
+                > a {
+                    &, &:focus, &:hover {
+                        border: 0;
+                        border-left: 2px solid @blue;
+                        border-right-color: transparent;
+                        margin: 0 -1px 0 -1px;
+                        .box-shadow(-2px 0 3px 0 @black3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tabs-right {
+    > .nav-tabs {
+        top: auto;
+        margin-bottom: 0;
+        float: right;
+
+        > li {
+            float: none;
+
+            > a {
+                &, &:focus, &:hover {
+                    border-top: 0;
+                    margin: 0 -1px;
+                }
+            }
+
+            &.active {
+                > a {
+                    &, &:focus, &:hover {
+                        border-top-width: 0;
+                        border-right: 2px solid @blue;
+                        border-left-color: transparent;
+                        margin: 0 -2px 0 -1px;
+                        .box-shadow(2px 0 3px 0 @black3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+    .tabs-left > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a {
+        min-width: 60px;
+    }
+
+.nav-tabs li [class*=" fa-"], .nav-tabs li [class^="fa-"] {
+    width: 1.25em;
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-tabs > li.open .dropdown-toggle {
+    background-color: @platinum;
+    border-color: @platinum;
+}
+
+.tabs-left .tab-content, .tabs-right .tab-content {
+    overflow: auto;
+}
+
+.nav-pills .open .dropdown-toggle, .nav > li.dropdown.open.active > a:hover, .nav > li.dropdown.open.active > a:focus {
+    background-color: @snow;
+}
+
+.nav .dropdown-menu > .active > a, .nav .dropdown-menu > .active > a:hover, .nav .dropdown-menu > .active > a:focus {
+    color: @darkcarbon;
+    background-color: @platinum;
+}
+
+.nav-tabs > li:not(.active):not(.open) > a:not(:hover) > [class*="fa-"].disabled:first-child {
+    color: #909090 !important;
+}
+/*#endregion Tab*/
+/*#endregion Tabs*/

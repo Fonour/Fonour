@@ -1,0 +1,280 @@
+﻿/*#region labels and badges */
+.label,
+.badge {
+    display: inline-block;
+    font-weight: 300;
+    .text-shadow(none) !important;
+}
+
+.label {
+    font-size: 12px;
+    padding: 4px 6px 4px 6px;
+    .border-radius(2px) !important;
+
+    &.label-sm {
+        font-size: 12px;
+        padding: 1px 4px 1px 4px;
+    }
+}
+
+.badge {
+    font-size: 11px !important;
+    font-weight: 300;
+    text-align: center;
+    background-color: @gray;
+    height: 18px;
+    padding: 3px 6px 3px 6px;
+    .border-radius(12px) !important;
+    .text-shadow(none) !important;
+    vertical-align: middle;
+
+    &.badge-square {
+        .border-radius(2px) !important;
+    }
+
+    &.badge-empty {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        vertical-align: baseline;
+    }
+}
+
+.badge-default,
+.label-default {
+    background-color: @gray !important;
+
+    &.graded {
+        background: linear-gradient(to right, @gray, @platinum) !important;
+    }
+}
+
+.badge-blue,
+.label-blue {
+    background-color: @blue !important;
+
+    &.graded {
+        background: linear-gradient(to right, @blue, #80c1fb) !important;
+    }
+}
+
+.label-info,
+.badge-info {
+    background-color: @info;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @info, #c4e6f6) !important;
+    }
+}
+
+.label-sky,
+.badge-sky {
+    background-color: @sky;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @sky, #c4e6f6) !important;
+    }
+}
+
+.badge-primary,
+.label-primary {
+    background-color: @primary !important;
+
+    &.graded {
+        background: linear-gradient(to right, @primary, #aec9fa) !important;
+    }
+}
+
+.label-azure,
+.badge-azure {
+    background-color: @azure;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @azure, #5edfff) !important;
+    }
+}
+
+.label-blueberry,
+.badge-blueberry {
+    background-color: @blueberry;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @blueberry, #ced5e9) !important;
+    }
+}
+
+.label-palegreen,
+.badge-palegreen {
+    background-color: @palegreen;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @palegreen, #c5e9b6) !important;
+    }
+}
+
+.label-success,
+.badge-success {
+    background-color: @success;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @success, #b0e0a4) !important;
+    }
+}
+
+.label-green,
+.badge-green {
+    background-color: @green;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @green, @palegreen) !important;
+    }
+}
+
+.label-lightyellow,
+.badge-lightyellow {
+    background-color: @lightyellow;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @lightyellow, #f8e26d) !important;
+    }
+}
+
+.label-yellow,
+.badge-yellow {
+    background-color: @yellow;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @yellow, @lightyellow) !important;
+    }
+}
+
+.label-warning,
+.badge-warning {
+    background-color: @warning;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @warning, #f8df95) !important;
+    }
+}
+
+.label-gold,
+.badge-gold {
+    background-color: @gold;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @gold, #fece90) !important;
+    }
+}
+
+.label-orange,
+.badge-orange {
+    background-color: @orange;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @orange, #fb9f8d) !important;
+    }
+}
+
+.label-lightred,
+.badge-lightred {
+    background-color: @lightred;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @lightred, #f88f83) !important;
+    }
+}
+
+.label-darkorange,
+.badge-darkorange {
+    background-color: @darkorange;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @darkorange, #f5a998) !important;
+    }
+}
+
+.label-red,
+.badge-red {
+    background-color: @red;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @red, #f5836f) !important;
+    }
+}
+
+.label-pink,
+.badge-pink {
+    background-color: @pink;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @pink, #f299b9) !important;
+    }
+}
+
+.label-darkpink,
+.badge-darkpink {
+    background-color: @darkpink;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @darkpink, #fb6880) !important;
+    }
+}
+
+.label-danger,
+.badge-danger {
+    background-color: @danger;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @danger, #f7b5b0) !important;
+    }
+}
+
+.label-magenta,
+.badge-magenta {
+    background-color: @magenta;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @magenta, #e9abc0) !important;
+    }
+}
+
+.label-purple,
+.badge-purple {
+    background-color: @purple;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @purple, #daafe8) !important;
+    }
+}
+
+.label-maroon,
+.badge-maroon {
+    background-color: @maroon;
+    background-image: none !important;
+
+    &.graded {
+        background: linear-gradient(to right, @maroon, #eab6c9) !important;
+    }
+}
+/*#endregion labels and badges */

@@ -1,0 +1,121 @@
+﻿/*#region Wells*/
+.well {
+    .border-radius(2px);
+    .box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    background-color: @snow;
+    border: 0;
+    color: @darkcarbon;
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 0px;
+
+    &.attached {
+        position: relative;
+        top: -1px;
+        bottom: -1px;
+        border-radius: 0;
+        margin: 0;
+        box-shadow: 0 0 0 1px #DDD;
+
+        &.top {
+            top: 0;
+            bottom: -1px;
+            margin-top: 1em;
+            margin-bottom: 0;
+            .border-radius(3px 3px 0 0);
+            border-bottom: 0;
+        }
+
+        &.bottom {
+            top: -1px;
+            bottom: 0;
+            margin-top: 0;
+            margin-bottom: 1em;
+            .border-radius(0 0 3px 3px);
+            border-top: 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    /*#region Bordered Well*/
+    &.bordered-top {
+        border-top: 5px solid @themeprimary;
+    }
+
+    &.bordered-bottom {
+        border-bottom: 5px solid @themeprimary;
+    }
+
+    &.bordered-left {
+        border-left: 5px solid @themeprimary;
+    }
+
+    &.bordered-right {
+        border-right: 5px solid @themeprimary;
+    }
+    /*#endregion Bordered Well*/
+    /*#region Colored Well*/
+    &[class*="bg-"] {
+        color: @whitesmoke;
+    }
+    /*#endregion Bordered Well*/
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+    }
+
+    h1, h2, h3 {
+        line-height: 36px;
+    }
+
+    &.with-header {
+        padding-top: 60px;
+    }
+
+    &.with-footer {
+        padding-bottom: 60px;
+    }
+
+    .header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 10px;
+        text-align: left;
+        border-radius: 2px 2px 0 0;
+        border-bottom: 1px solid @platinum;
+
+        &[class*="bg-"] {
+            color: @white;
+            border-bottom: 0;
+        }
+
+        &[class*="bordered-"] {
+            border-bottom: 3px solid @white;
+        }
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 10px;
+        border-top: 1px solid @platinum;
+        border-radius: 0 0 2px 2px;
+
+        &[class*="bordered-"] {
+            border-top: 3px solid @white;
+        }
+    }
+
+    hr {
+        &.wide {
+            margin-right: -19px;
+            margin-left: -19px;
+        }
+    }
+}
+/*#endregion Wells*/

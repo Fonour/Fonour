@@ -1,0 +1,308 @@
+﻿// Import LessHat Mixins
+@import "other-less/LessHat.less";
+
+// Variables
+@import "beyond-less/variables.less";
+
+
+/*#region FontAwesome Page*/
+.fontawesome-icon-list {
+    margin: 22px 0 0 0 !important;
+
+    .fa-hover {
+        color: @darkcarbon;
+        display: block;
+        height: 36px;
+        line-height: 32px;
+        padding-left: 10px;
+        padding: 2px 0;
+
+        .fa {
+            display: inline-block;
+            font-size: 14px;
+            margin-right: 10px;
+            text-align: right;
+            width: 32px;
+        }
+
+        &:hover {
+            background-color: @ivory;
+            color: @black;
+            text-decoration: none;
+
+            .fa {
+                font-size: 28px;
+                vertical-align: -6px;
+            }
+        }
+    }
+}
+
+/*#endregion FontAwesome Page*/
+/*#region GlyphIcon Page*/
+.bs-glyphicons {
+    overflow: hidden;
+
+    li {
+        float: left;
+        width: 25%;
+        height: 115px;
+        padding: 10px;
+        font-size: 10px;
+        line-height: 1.4;
+        text-align: center;
+        border: 1px solid @white;
+        background-color: #f9f9f9;
+
+        &:hover {
+            color: @white;
+            background-color: @lightred;
+        }
+    }
+
+    .glyphicon {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .glyphicon-class {
+        display: block;
+        text-align: center;
+        word-wrap: break-word;
+    }
+}
+
+.bs-glyphicons-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+@media (min-width:768px) {
+    .bs-glyphicons {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+        .bs-glyphicons li {
+            width: 12.5%;
+            font-size: 12px;
+        }
+}
+
+/*#endregion GlyphIcon Page*/
+/*#region Weather Page*/
+.weathericons {
+    padding: 5px 10px;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: @palegreen;
+        color: @white;
+    }
+
+    .icon, .class {
+        display: inline-block;
+    }
+
+    .icon {
+        margin-right: 5px;
+        font-size: 24px;
+    }
+}
+/*#endregion Weather Page*/
+/*#region Typicon Page*/
+#typicon-preview {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+
+    .icon {
+        float: left;
+        padding: 6px;
+        display: inline-block;
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        vertical-align: middle;
+        .border-radius(6px);
+        color: @carbon;
+
+        .typcn:before {
+            font-size: 24px;
+        }
+
+        &:hover {
+            background-color: @yellow;
+            line-height: 38px;
+            color: @white;
+
+            .typcn:before {
+                font-size: 32px;
+            }
+        }
+    }
+}
+/*#endregion Typicon Page*/
+/*#region ChartJS*/
+.chartcontainer {
+    width: 100%;
+    text-align: center;
+}
+/*#endregion ChartJS*/
+/*#region Easy Pie Charts*/
+.easy-pie-chart-preview {
+    .well {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+        padding-top: 50px;
+
+        .easyPieChart {
+            margin: 0 auto;
+        }
+    }
+}
+/*#endregion Easy Pie Charts*/
+/*#region Sparkline Charts*/
+.sparkline-preview {
+    .well {
+        text-align: center;
+        position: relative;
+    }
+}
+/*#endregion Sparkline Charts*/
+/*#region Buttons*/
+.buttons-preview {
+    .btn, .btn-group {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+}
+/*#endregion Buttons*/
+/*#region Basic Elemets*/
+.dropdown-container {
+    margin: 0 auto;
+    text-align: center;
+
+    .dropdown-preview {
+        display: inline-block;
+        text-align: left;
+
+        > .dropdown-menu {
+            display: block;
+            position: static;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+#dropdownbuttons .btn {
+    margin-top: 10px;
+}
+
+.labels-container {
+    .label {
+        margin: 0 10px 10px 0;
+    }
+}
+/*#endregion Basic Elemets*/
+
+/*#region Alerts*/
+.popover-container {
+    overflow: auto;
+}
+
+.popoverexample .popover {
+    position: relative;
+    display: block;
+    width: 260px;
+    margin: 20px;
+}
+/*#endregion Alerts*/
+
+/*#region Modals & Wells*/
+.modal-preview {
+    .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+        display: block;
+        width: auto;
+        overflow: hidden;
+        max-width: 600px;
+
+        .modal-dialog {
+            width: 90%;
+        }
+    }
+}
+
+.bordered-well-container {
+    .well {
+        margin-bottom: 0px;
+    }
+}
+/*#endregion Modals & Wells*/
+/*#region Knob*/
+.knob-container {
+    text-align: center;
+}
+/*#endregion Knob*/
+
+/*#region noUiSlider*/
+#red, #green, #blue {
+    margin: 10px;
+    display: inline-block;
+    height: 200px;
+}
+
+#colorpicker {
+    height: 240px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #BFBFBF;
+
+    .result {
+        margin: 60px 30px;
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        vertical-align: top;
+        color: rgb(127, 127, 127);
+        background: rgb(127, 127, 127);
+        border: 1px solid #fff;
+        box-shadow: 0 0 10px;
+    }
+}
+
+#colors .colored-slider {
+    margin-bottom: 20px;
+}
+
+#sizes .sized-slider {
+    margin-bottom: 20px;
+}
+/*#endregion noUiSlider*/
+
+/*#region Grid Page*/
+.grid-example {
+    .row {
+        margin-bottom: 15px;
+        padding:0 15px;
+
+        [class^=col-] {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: @whitesmoke;
+            border: 1px solid #ddd;
+        }
+    }
+}
+/*#endregion Grid Page*/

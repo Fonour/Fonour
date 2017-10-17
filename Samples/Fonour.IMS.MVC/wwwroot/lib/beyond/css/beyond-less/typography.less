@@ -1,0 +1,181 @@
+﻿/*#region Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300 !important;
+    font-family: @main-fonts;
+
+    small {
+        color: @carbon;
+    }
+
+    &.block {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .label {
+        font-size: 75%;
+    }
+
+    &.row-title {
+        line-height: 17px;
+        margin: 10px 0;
+        padding: 9px 10px 9px 8px;
+        display: inline-block;
+        color: #646464;
+        font-weight: 400;
+        background-color: @white;
+        position: relative;
+        .border-radius(0 2px 2px 0);
+        .box-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+
+        &:before {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -4px;
+            width: 4px;
+            max-width: 4px;
+            overflow: hidden;
+            background-color: @themeprimary;
+        }
+
+        .fa, .glyphicon, .typcn, [class*="wi-"] {
+            margin-right: 5px;
+            line-height: 17px;
+            font-size: 17px;
+        }
+    }
+}
+
+h1 {
+    font-size: 32px;
+
+    &.smaller {
+        font-size: 31px;
+    }
+
+    &.bigger {
+        font-size: 33px;
+    }
+
+    &.block {
+        margin-bottom: 16px;
+    }
+}
+
+h2 {
+    font-size: 26px;
+
+    &.smaller {
+        font-size: 25px;
+    }
+
+    &.bigger {
+        font-size: 27px;
+    }
+
+    &.block {
+        margin-bottom: 16px;
+    }
+}
+
+h3 {
+    font-size: 22px;
+
+    &.smaller {
+        font-size: 21px;
+    }
+
+    &.bigger {
+        font-size: 23px;
+    }
+
+    &.block {
+        margin-bottom: 16px;
+    }
+}
+
+h4 {
+    font-size: 18px;
+
+    &.smaller {
+        font-size: 17px;
+    }
+
+    &.bigger {
+        font-size: 19px;
+    }
+
+    &.block {
+        margin-bottom: 16px;
+    }
+}
+
+h5 {
+    font-size: 15px;
+
+    &.smaller {
+        font-size: 14px;
+    }
+
+    &.bigger {
+        font-size: 16px;
+    }
+
+    &.block {
+        margin-bottom: 16px;
+    }
+}
+
+h6 {
+    font-size: 13px;
+
+    &.smaller {
+        font-size: 12px;
+    }
+
+    &.bigger {
+        font-size: 14px;
+    }
+
+    &.block {
+        margin-bottom: 16px;
+    }
+}
+
+.text-align-center {
+    text-align: center !important;
+}
+
+.text-align-left {
+    text-align: left !important;
+}
+
+.text-align-right {
+    text-align: right !important;
+}
+
+.text-align-justify {
+    text-align: justify !important;
+}
+
+.block-center {
+    margin: 0 auto;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 22px;
+}
+
+a {
+    &:focus, &:active {
+        text-decoration: none;
+    }
+}
+/*#endregion Typography */

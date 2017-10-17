@@ -1,0 +1,124 @@
+﻿// general
+@base-font-family:                      @main-fonts;
+
+// tagsInput
+@tags-bgcolor:                          #fff;
+@tags-border:                           1px solid @lightgray;
+@tags-border-shadow:                    1px 1px 1px 0 @gray inset;
+@tags-outline-box-shadow:               0 0 3px 1px rgba(5, 139, 242, 0.6);
+@tags-outline-box-shadow-invalid:       0 0 3px 1px rgba(255, 0, 0, 0.6);
+
+@tag-height:                            24px;
+@tag-font:                              12px @base-font-family;
+@tag-color:                             @themeprimary;
+@tag-border:                            1px solid @themeprimary;
+@tag-border-radius:                     2px;
+@tag-color-selected:                    rgba(254, 187, 187, 1) 0%, rgba(254, 144, 144, 1) 45%, rgba(255, 92, 92, 1) 100%;
+@tag-color-invalid:                     #ff0000;
+
+@remove-button-color:                   rgba(255,255,255,.5);
+@remove-button-color-active:            #fff;
+@remove-button-font:                    bold 18px Arial, sans-serif;
+
+@input-font:                            @tag-font;
+
+
+tags-input {
+  display: block;
+
+
+  .host {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 100%;
+
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+
+tags-input {
+  .tags {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    padding: 1px;
+    overflow: hidden;
+    word-wrap: break-word;
+    cursor: text;
+    background-color: @tags-bgcolor;
+    border: @tags-border;
+    box-shadow: @tags-border-shadow;
+    height: 100%;
+
+    &.focused {
+      outline: none;
+      /*.box-shadow(@tags-outline-box-shadow);*/
+    }
+
+    .tag-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .tag-item {
+      margin: 2px;
+      padding: 0 5px;
+      display: inline-block;
+      float: left;
+      font: @tag-font;
+      height: @tag-height;
+      line-height: @tag-height - 4px;
+      border: @tag-border;
+      border-radius: @tag-border-radius;
+      background-color:@tag-color;
+      color:#fff;
+
+      &.selected {
+        /*.gradient(@tag-color-selected);*/
+      }
+
+      .remove-button {
+        margin: 0 0 0 5px;
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        vertical-align: middle;
+        font: @remove-button-font;
+        color: @remove-button-color;
+
+        &:active {
+          color: @remove-button-color-active;
+        }
+      }
+    }
+
+    .input {
+      border: 0;
+      outline: none;
+      margin: 2px;
+      padding: 0;
+      padding-left: 5px;
+      float: left;
+      .box-shadow(none);
+      height: @tag-height;
+      font: @input-font;
+
+      &.invalid-tag {
+        color: @tag-color-invalid;
+      }
+
+      &::-ms-clear {
+        display: none;
+      }
+    }
+  }
+
+  &.ng-invalid .tags {
+    /*.box-shadow(@tags-outline-box-shadow-invalid);*/
+  }
+}

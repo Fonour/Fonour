@@ -1,0 +1,76 @@
+﻿/*#region Breadcrumbs*/
+@breadcrumb-expand-icon-color:#b2b6bf;
+.page-breadcrumbs {
+    position: relative;
+    background: @seashell;
+    min-height: 40px;
+    line-height: 39px;
+    padding: 0;
+    display: block;
+    z-index: 1;
+    .box-shadow(0 2px 4px 0 rgba(0,0,0,.15));
+
+    &.breadcrumbs-fixed {
+        position: fixed;
+        right: 0;
+        left: 224px;
+        top: 45px;
+        z-index: 999;
+
+        + .page-header {
+            margin-top: 40px;
+        }
+    }
+}
+
+.breadcrumb {
+    background-color: transparent;
+    display: inline-block;
+    line-height: 24px;
+    margin: 0 22px 0 12px;
+    padding: 0;
+    font-size: 13px;
+    color: @slate-gray;
+    border-radius: 0;
+
+    & > li, & > li.active {
+        color: @silver;
+        .text-shadow(none);
+    }
+
+        & > li + li:before {
+            color: @darkgray;
+        }
+
+        & > li > .divider {
+            padding: 0 4px;
+        }
+
+        & > li > a {
+            display: inline-block;
+            color: @themeprimary;
+        }
+
+        & > li:first-child > a {
+            padding-left: 4px;
+        }
+
+        & > li > i {
+            margin-left: 4px;
+            margin-right: 2px;
+            font-size: 20px;
+            position: relative;
+            top: 2px;
+        }
+
+    & .expand-icon {
+        height: 22px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: 1px;
+        font-size: 14px;
+        color: @breadcrumb-expand-icon-color;
+    }
+}
+/*#endregion Breadcrumb*/

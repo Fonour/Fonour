@@ -1,0 +1,958 @@
+﻿/*#region DataBoxes*/
+.databox-container {
+    text-align: center;
+    font-size: 0;
+}
+
+.databox {
+    display: inline-block;
+    width: 100%;
+    height: 65px;
+    padding: 0;
+    font-size: 0;
+    margin-bottom: 30px;
+    vertical-align: top;
+    min-width: 130px;
+
+    .databox-icon {
+        margin: 0;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+
+        > .fa, .typcn, .glyphicon, .wi {
+            display: inline-block;
+            margin: 0;
+            text-align: center;
+            position: relative;
+            margin-top: 3px;
+
+            &:before {
+                font-size: 40px;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+    .databox-sparkline {
+        padding-top: 0;
+        margin: 0 auto;
+        display: inline-block;
+        vertical-align: bottom;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .databox-piechart {
+        padding-top: 0;
+        margin: 0 auto;
+        display: inline-block;
+        vertical-align: bottom;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .databox-header {
+        display: block;
+        font-size: 18px;
+        font-family: @number-fonts;
+        font-weight: 400 /*rtl:300*/;
+        margin: 8px 5px;
+        position: relative;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    .databox-number {
+        display: block;
+        font-size: 17px;
+        line-height: 26px;
+        margin: 2px;
+        position: relative;
+        font-family: @number-fonts;
+
+        i {
+            margin-right: 5px;
+        }
+
+        &.number-xs {
+            font-size: 11px;
+        }
+
+        &.number-sm {
+            font-size: 14px;
+        }
+
+        &.number-lg {
+            font-size: 20px;
+        }
+
+        &.number-xlg {
+            font-size: 23px;
+        }
+
+        &.number-xxlg {
+            font-size: 30px;
+        }
+    }
+
+    .databox-title {
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 2px;
+        position: relative;
+
+        i {
+            margin-right: 5px;
+            font-size: 13px;
+        }
+    }
+
+    .databox-text {
+        display: block;
+        font-size: 11px;
+        margin: 4px 0 2px;
+        position: relative;
+
+        i {
+            margin-right: 5px;
+            font-size: 13px;
+        }
+    }
+
+    .databox-inlinetext {
+        font-size: 11px;
+        margin: 2px;
+        position: relative;
+
+        i {
+            margin-right: 5px;
+            font-size: 13px;
+        }
+    }
+
+    .databox-stat {
+        display: inline-block;
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        padding: 2px 5px;
+
+        &.stat-left {
+            left: 7px;
+            right: auto;
+        }
+
+        .stat-text {
+            display: inline-block;
+            font-size: 13px;
+            padding-right: 5px;
+            font-weight: 500;
+        }
+
+        .stat-icon {
+            display: inline-block;
+            font-size: 13px;
+
+            &.icon-lg {
+                font-size: 16px;
+            }
+
+            &.icon-xlg {
+                font-size: 18px;
+            }
+        }
+
+        &.radius-bordered {
+            .border-radius(3px);
+        }
+
+        &[class*="bg-"] {
+            color: @white;
+        }
+    }
+
+    .databox-state {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 24px;
+        width: 24px;
+        .border-radius(50%);
+        background-color: @platinum;
+        text-align: center;
+        .box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+        border: 2px solid @white;
+
+        i {
+            font-size: 13px;
+            color: @white;
+            line-height: 20px;
+        }
+    }
+
+    .databox-row {
+        width: 100%;
+        margin: 0;
+        position: relative;
+
+        &[class*="bg-"] {
+            color: @white;
+        }
+
+        &.bordered-bottom {
+            border-bottom: 1px solid @white;
+        }
+
+        &.bordered-top {
+            border-top: 1px solid @white;
+        }
+
+        &.bordered-left {
+            border-left: 1px solid @white;
+        }
+
+        &.bordered-right {
+            border-right: 1px solid @white;
+        }
+
+        &.bordered-thick {
+            border-width: 2px;
+        }
+
+        &.row-1 {
+            height: 8.33%;
+        }
+
+        &.row-2 {
+            height: 16.66%;
+        }
+
+        &.row-3 {
+            height: 25%;
+        }
+
+        &.row-4 {
+            height: 33.33%;
+        }
+
+        &.row-5 {
+            height: 41.66%;
+        }
+
+        &.row-6 {
+            height: 50%;
+        }
+
+        &.row-7 {
+            height: 58.33%;
+        }
+
+        &.row-8 {
+            height: 66.66%;
+        }
+
+        &.row-9 {
+            height: 75%;
+        }
+
+        &.row-10 {
+            height: 83.33%;
+        }
+
+        &.row-11 {
+            height: 91.66%;
+        }
+
+        &.row-12 {
+            height: 100%;
+        }
+    }
+
+    .databox-cell {
+        height: 100%;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 10px;
+
+        &[class*="bg-"] {
+            color: @white;
+        }
+
+        &.bordered-bottom {
+            border-bottom: 1px solid @white;
+        }
+
+        &.bordered-top {
+            border-top: 1px solid @white;
+        }
+
+        &.bordered-left {
+            border-left: 1px solid @white;
+        }
+
+        &.bordered-right {
+            border-right: 1px solid @white;
+        }
+
+        &.bordered-thick {
+            border-width: 2px;
+        }
+
+        &.cell-1 {
+            width: 8.33%;
+        }
+
+        &.cell-2 {
+            width: 16.66%;
+        }
+
+        &.cell-3 {
+            width: 25%;
+        }
+
+        &.cell-4 {
+            width: 33.33%;
+        }
+
+        &.cell-5 {
+            width: 41.66%;
+        }
+
+        &.cell-6 {
+            width: 50%;
+        }
+
+        &.cell-7 {
+            width: 58.33%;
+        }
+
+        &.cell-8 {
+            width: 66.66%;
+        }
+
+        &.cell-9 {
+            width: 75%;
+        }
+
+        &.cell-10 {
+            width: 83.33%;
+        }
+
+        &.cell-11 {
+            width: 91.66%;
+        }
+
+        &.cell-12 {
+            width: 100%;
+        }
+    }
+
+    &.databox-inverted {
+        .databox-left {
+            .calc(width, ~'100% - 65px');
+        }
+
+        .databox-right {
+            width: 65px;
+        }
+    }
+
+    &.databox-transparent {
+        .databox-left {
+            background-color: transparent !important;
+        }
+
+        .databox-right {
+            background-color: transparent !important;
+        }
+    }
+
+    .databox-left {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        margin: 0;
+        width: 65px;
+        height: 65px;
+        padding: 10px;
+        color: @themeprimary;
+
+        &[class*="bg-"] {
+            color: @white;
+        }
+    }
+
+    .databox-right {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        .calc(width, ~'100% - 65px');
+        height: 65px;
+        color: @lightcarbon;
+        padding: 5px 10px;
+
+        &.bordered {
+            border-left: 1px solid @white;
+        }
+
+        &.bordered-thick {
+            border-left: 3px solid @white;
+        }
+
+        &[class*="bg-"] {
+            color: @white;
+        }
+    }
+
+    &.databox-shadowed {
+        .box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    }
+
+    &.radius-bordered {
+        .border-radius(3px);
+
+        .databox-left {
+            -webkit-border-radius: 3px 0 0 3px /*rtl:0 3px 3px 0*/;
+            -webkit-background-clip: padding-box;
+            -moz-border-radius: 3px 0 0 3px /*rtl:0 3px 3px 0*/;
+            -moz-background-clip: padding;
+            border-radius: 3px 0 0 3px /*rtl:0 3px 3px 0*/;
+            background-clip: padding-box;
+        }
+
+        .databox-right {
+            -webkit-border-radius: 0 3px 3px 0 /*rtl:3px 0 0 3px*/;
+            -webkit-background-clip: padding-box;
+            -moz-border-radius: 0 3px 3px 0 /*rtl:3px 0 0 3px*/;
+            -moz-background-clip: padding;
+            border-radius: 0 3px 3px 0 /*rtl:3px 0 0 3px*/;
+            background-clip: padding-box;
+
+            .databox-row {
+                &:first-child {
+                    .border-radius(0 3px 0 0);
+                }
+
+                &:last-child {
+                    .border-radius(0 0 3px 0);
+                }
+            }
+        }
+    }
+
+    &.databox-graded {
+        .background-image(linear-gradient(to right, #ddd, #fff));
+    }
+
+    &.databox-halved {
+        .databox-left {
+            width: 50% !important;
+        }
+
+        .databox-right {
+            width: 50% !important;
+        }
+    }
+
+    &.databox-lg {
+        height: 80px;
+
+        .databox-icon {
+
+            > .fa, .typcn, .glyphicon, .wi {
+
+                &:before {
+                    font-size: 48px;
+                    padding: 6px 4px 7px;
+                }
+            }
+        }
+
+        .databox-sparkline {
+            margin: 13px auto;
+        }
+
+        .databox-number {
+            font-size: 20px;
+            margin: 4px 0 6px;
+        }
+
+        .databox-left {
+            width: 80px;
+            height: 80px;
+        }
+
+        .databox-right {
+            .calc(width, ~'100% - 80px');
+            height: 80px;
+            padding: 10px 15px;
+        }
+
+        &.databox-inverted {
+            .databox-left {
+                .calc(width, ~'100% - 80px');
+            }
+
+            .databox-right {
+                width: 80px;
+            }
+        }
+    }
+
+    &.databox-xlg {
+        height: 170px;
+
+        .databox-icon {
+
+            > .fa, .typcn, .glyphicon {
+
+                &:before {
+                    padding: 6px 4px 7px;
+                }
+            }
+
+            .wi {
+                &:before {
+                    font-size: 55px !important;
+                }
+            }
+        }
+
+        .databox-left {
+            width: 170px;
+            height: 170px;
+        }
+
+        .databox-right {
+            .calc(width, ~'100% - 170px');
+            height: 170px;
+        }
+
+        &.databox-inverted {
+            .databox-left {
+                .calc(width, ~'100% - 170px');
+            }
+
+            .databox-right {
+                width: 170px;
+            }
+        }
+    }
+
+    &.databox-xxlg {
+        height: 250px;
+
+        .databox-icon {
+
+            > .fa, .typcn, .glyphicon, .wi {
+
+                &:before {
+                    font-size: 200px;
+                    padding: 6px 4px 7px;
+                }
+            }
+        }
+
+        .databox-left {
+            width: 250px;
+            height: 250px;
+        }
+
+        .databox-right {
+            .calc(width, ~'100% - 250px');
+            height: 250px;
+        }
+
+        &.databox-inverted {
+            .databox-left {
+                .calc(width, ~'100% - 250px');
+            }
+
+            .databox-right {
+                width: 250px;
+            }
+        }
+    }
+
+    &.databox-vertical {
+        width: 100%;
+        height: 100px;
+
+        .databox-top {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            display: inline-block;
+            text-align: center;
+            margin: 0;
+            padding: 5px;
+            color: @themeprimary;
+
+            &[class*="bg-"] {
+                color: @white;
+            }
+        }
+
+        .databox-bottom {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            display: inline-block;
+            margin: 0;
+            color: @lightcarbon;
+            padding: 5px 10px;
+
+            &.bordered {
+                border-top: 1px solid @white;
+            }
+
+            &.bordered-thick {
+                border-top: 3px solid @white;
+            }
+
+            &[class*="bg-"] {
+                color: @white;
+            }
+        }
+
+        .databox-icon {
+
+            > .fa, .typcn, .glyphicon, .wi {
+                &:before {
+                    font-size: 38px;
+                }
+            }
+        }
+
+        &.radius-bordered {
+            .border-radius(3px);
+
+            .databox-top {
+                .border-radius(3px 3px 0 0);
+
+                .databox-row {
+                    &:first-child {
+                        .databox-cell {
+                            &:first-child {
+                                .border-radius(3px 0 0 0);
+                            }
+
+                            &:last-child {
+                                .border-radius(0 3px 0 0);
+                            }
+                        }
+                    }
+                }
+
+                img {
+                    .border-radius(3px 3px 0 0);
+                }
+            }
+
+            .databox-bottom {
+                .border-radius(0 0 3px 3px);
+
+                .databox-row {
+                    &:last-child {
+                        .databox-cell {
+                            &:first-child {
+                                .border-radius(0 0 0 3px);
+                            }
+
+                            &:last-child {
+                                .border-radius(0 0 3px 0);
+                            }
+                        }
+                    }
+                }
+
+                img {
+                    .border-radius(0 0 3px 3px);
+                }
+            }
+        }
+
+        &.databox-graded {
+            .background-image(linear-gradient(to bottom, @platinum, @white));
+        }
+
+        &.databox-halved {
+            .databox-top {
+                height: 50%;
+            }
+
+            .databox-bottom {
+                height: 50%;
+            }
+        }
+
+        &.databox-lg {
+            height: 150px;
+            width: 100%;
+
+            .databox-number {
+                font-size: 17px;
+                margin: 2px;
+            }
+
+            .databox-icon {
+                > .fa, .typcn, .glyphicon {
+                    &:before {
+                        font-size: 38px !important;
+                        padding: 0;
+                    }
+                }
+
+                .wi {
+                    &:before {
+                        font-size: 50px !important;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .databox-top {
+                height: 50px;
+            }
+
+            .databox-bottom {
+                height: 100px;
+            }
+
+            &.databox-inverted {
+                .databox-icon {
+                    > .fa, .typcn, .glyphicon, .wi {
+                        &:before {
+                            font-size: 85px;
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .databox-top {
+                    height: 100px;
+                }
+
+                .databox-bottom {
+                    height: 50px;
+                }
+            }
+
+            &.databox-halved {
+                .databox-icon {
+                    > .fa, .typcn, .glyphicon, .wi {
+                        &:before {
+                            font-size: 58px;
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .databox-top {
+                    height: 75px;
+                }
+
+                .databox-bottom {
+                    height: 75px;
+                }
+            }
+        }
+
+        &.databox-xlg {
+            height: 200px;
+            width: 100%;
+
+            .databox-icon {
+                > .fa, .typcn, .glyphicon, .wi {
+                    &:before {
+                        font-size: 38px;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .databox-top {
+                height: 50px;
+            }
+
+            .databox-bottom {
+                height: 150px;
+            }
+
+            &.databox-inverted {
+                .databox-icon {
+                    > .fa, .typcn, .glyphicon, .wi {
+                        &:before {
+                            font-size: 120px;
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .databox-top {
+                    height: 150px;
+                }
+
+                .databox-bottom {
+                    height: 50px;
+                }
+            }
+
+            &.databox-halved {
+                .databox-icon {
+                    > .fa, .typcn, .glyphicon, .wi {
+                        &:before {
+                            font-size: 85px;
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .databox-top {
+                    height: 100px;
+                }
+
+                .databox-bottom {
+                    height: 100px;
+                }
+            }
+        }
+
+        &.databox-xxlg {
+            height: 300px;
+            width: 100%;
+
+            .databox-icon {
+                > .fa, .typcn, .glyphicon, .wi {
+                    &:before {
+                        font-size: 38px;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .databox-top {
+                height: 50px;
+            }
+
+            .databox-bottom {
+                height: 250px;
+            }
+
+            &.databox-inverted {
+                .databox-icon {
+                    > .fa, .typcn, .glyphicon, .wi {
+                        &:before {
+                            font-size: 220px;
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .databox-top {
+                    height: 250px;
+                }
+
+                .databox-bottom {
+                    height: 50px;
+                }
+            }
+
+            &.databox-halved {
+                .databox-icon {
+                    > .fa, .typcn, .glyphicon, .wi {
+                        &:before {
+                            font-size: 120px;
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .databox-top {
+                    height: 150px;
+                }
+
+                .databox-bottom {
+                    height: 150px;
+                }
+            }
+        }
+
+        &.databox-xxxlg {
+            height: 500px;
+            width: 100%;
+
+            .databox-icon {
+                > .fa, .typcn, .glyphicon, .wi {
+                    &:before {
+                        font-size: 38px;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .databox-top {
+                height: 50px;
+            }
+
+            .databox-bottom {
+                height: 450px;
+            }
+
+            &.databox-inverted {
+                .databox-icon {
+                    > .fa, .typcn, .glyphicon, .wi {
+                        &:before {
+                            font-size: 420px;
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .databox-top {
+                    height: 450px;
+                }
+
+                .databox-bottom {
+                    height: 50px;
+                }
+            }
+
+            &.databox-halved {
+                .databox-icon {
+                    > .fa, .typcn, .glyphicon, .wi {
+                        &:before {
+                            font-size: 220px;
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .databox-top {
+                    height: 250px;
+                }
+
+                .databox-bottom {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .chart {
+        font-size: 13px;
+    }
+}
+/*#endregion DataBoxes*/

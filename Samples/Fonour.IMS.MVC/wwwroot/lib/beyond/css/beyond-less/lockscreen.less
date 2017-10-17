@@ -1,0 +1,80 @@
+﻿/*#region Lockscreen Page*/
+.lock-container {
+    margin: 15% auto;
+    max-width: 300px;
+
+    .lock-box {
+        position: relative;
+        background: #fff;
+        width: 280px;
+        height: 170px;
+        .box-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+        .background-image(linear-gradient(to top, #ffffff, #f3f3f3));
+
+        .lock-username {
+            position: absolute;
+            height: 50px;
+            width: 100%;
+            line-height: 50px;
+            top: 60px;
+            text-align: center;
+            color: @darkgray;
+        }
+
+        img {
+            position: absolute;
+            .calc(left, ~'50% - 64px');
+            top: -64px;
+            border: 3px solid @white;
+            width: 128px;
+            height: 128px;
+            background: @white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .lock-password {
+            position: absolute;
+            top: 115px;
+            text-align: center;
+            .calc(left, ~'50% - 114px');
+
+            input {
+                background-color: @white;
+                border-color: @platinum;
+                .border-radius(4px) !important;
+                text-align: center;
+                padding-left: 25px;
+            }
+        }
+
+        .btn-lock, .btn-lock:hover {
+            background: @white;
+            color: @themeprimary;
+            margin-top: -8px;
+            border: 0;
+            .box-shadow(none);
+
+            i:before {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .signinbox {
+        width: 280px !important;
+        height: 50px !important;
+        padding: 15px;
+        margin-top: 15px;
+        .box-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+        background-color: @white;
+        text-align: center;
+
+        a {
+            font-size: 13px;
+            color: @themeprimary;
+            padding-left: 5px;
+            cursor: pointer;
+        }
+    }
+}
+/*#endregion Lockscreen Page*/

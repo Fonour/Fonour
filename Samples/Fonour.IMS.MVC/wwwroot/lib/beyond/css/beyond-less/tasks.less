@@ -1,0 +1,140 @@
+﻿/*#region Tasks*/
+.task-container {
+    position: relative;
+    padding: 0;
+
+    .task-search {
+        padding: 15px 16px 15px;
+        background-color: @seashell;
+        border-bottom: 1px solid @ivory;
+
+        input {
+            border-color: @platinum !important;
+            .border-radius(3px) !important;
+        }
+    }
+
+    .tasks-list {
+        list-style: none;
+        padding: 0;
+
+        .task-item {
+            position: relative;
+            height: 150px;
+            border-bottom: 1px solid @platinum;
+
+            &:last-child {
+                border-bottom: 0px;
+            }
+
+            &:hover {
+                background-color: @whitesmoke;
+            }
+
+            .task-check {
+                position: absolute;
+                top: 20px;
+                left: 15px;
+                margin-right: 5px;
+            }
+
+            .task-state {
+                position: absolute;
+                top: 19px;
+                left: 45px;
+
+                .label {
+                    padding: 6px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .task-time {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 11px;
+                color: @darkgray;
+            }
+
+            .task-body {
+                position: absolute;
+                top: 60px;
+                left: 45px;
+                padding-right: 25px;
+                height: 40px;
+                overflow: hidden;
+                line-height: 22px;
+            }
+
+            .task-creator {
+                position: absolute;
+                top: 115px;
+                left: 45px;
+
+                a {
+                    font-size: 13px;
+                    color: @sky;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .task-assignedto {
+                position: absolute;
+                top: 115px;
+                right: 20px;
+                font-size: 13px;
+                color: @darkgray;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .task-container {
+        .tasks-list {
+            .task-item {
+                height: 130px;
+
+                .task-creator, .task-assignedto {
+                    top: 95px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .task-container {
+        .tasks-list {
+            .task-item {
+                height: 150px;
+
+                .task-creator, .task-assignedto {
+                    top: 115px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 335px) {
+    .task-container {
+        .tasks-list {
+            .task-item {
+                height: 175px;
+
+                .task-assignedto {
+                    top: 140px;
+                    right: auto;
+                    left: 45px;
+                }
+            }
+        }
+    }
+}
+/*#endregion Tasks*/

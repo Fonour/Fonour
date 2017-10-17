@@ -1,0 +1,365 @@
+﻿/*#region Wizards*/
+.wizard {
+    .border-radius(2px);
+    .box-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+    background-color: @white;
+    position: relative;
+    overflow: hidden;
+
+    &.wizard-tabbed {
+        background: @snow;
+
+        ul {
+            li {
+                padding: 0 30px;
+                background-color: @snow;
+
+                .chevron {
+                    display: none;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                &.complete {
+                    background-color: @snow;
+                }
+
+                &.active {
+                    background: @white;
+                }
+            }
+        }
+    }
+
+    &.wizard-wired {
+        padding-top: 10px;
+        display: block;
+        background: @white;
+        text-align: center;
+        .box-shadow(none);
+        border-bottom: 1px solid @ivory;
+
+        ul {
+            display: table;
+            width: 100%;
+            position: relative;
+
+            li {
+                display: table-cell;
+                text-align: center;
+                background-color: @white;
+                width: 20%;
+                padding: 0;
+                margin: 0;
+                .transition(all 1s ease);
+
+                .chevron {
+                    display: none;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                &.complete {
+                    background-color: @white;
+
+                    .step:before {
+                        font-size: 22px;
+                        line-height: 36px;
+                    }
+
+                    &:hover {
+                        background-color: @white;
+                    }
+                }
+
+                &.active {
+                    background-color: @white;
+                }
+
+                .step {
+                    border-width: 2px;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 34px;
+                    font-size: 15px;
+                    z-index: 2;
+                    background-color: @white;
+                }
+
+                .title {
+                    display: block;
+                    margin-top: 4px;
+                    margin-bottom: 6px;
+                    max-width: 100%;
+                    font-size: 14px;
+                    line-height: 20px;
+                    z-index: 104;
+                    text-align: center;
+                    table-layout: fixed;
+                    -ms-word-wrap: break-word;
+                    word-wrap: break-word;
+                }
+
+                &:before {
+                    display: block;
+                    content: "";
+                    width: 100%;
+                    height: 2px !important;
+                    font-size: 0;
+                    overflow: hidden;
+                    background-color: @platinum;
+                    position: relative !important;
+                    top: 25px;
+                    z-index: 1 !important;
+                }
+
+                &:first-child:before {
+                    max-width: 51%;
+                    left: 50%;
+                }
+
+                &:last-child:before {
+                    max-width: 50%;
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style: none outside none;
+        padding: 0;
+        margin: 0;
+        width: 4000px;
+
+        &.previous-disabled {
+            li {
+                &.complete {
+                    cursor: default;
+
+                    &:hover {
+                        background: @seashell;
+                        cursor: default;
+
+                        .chevron:before {
+                            border-left-color: @seashell;
+                        }
+                    }
+                }
+            }
+        }
+
+        li {
+            float: left;
+            margin: 0;
+            padding: 0 20px 0 30px;
+            line-height: 46px;
+            position: relative;
+            background: @whitesmoke;
+            color: @lightgray;
+            font-size: 16px;
+            cursor: default;
+            .transition(all 0.218s ease);
+
+            .step {
+                border: 2px solid @platinum;
+                color: @gray;
+                font-size: 13px;
+                border-radius: 100%;
+                position: relative;
+                z-index: 2;
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                line-height: 20px;
+                text-align: center;
+                margin-right: 10px;
+            }
+
+            .chevron {
+                border: 24px solid transparent;
+                border-left: 14px solid #d4d4d4;
+                border-right: 0;
+                display: block;
+                position: absolute;
+                right: -14px;
+                top: 0;
+                z-index: 1;
+            }
+
+                .chevron:before {
+                    border: 24px solid transparent;
+                    border-left: 14px solid @whitesmoke;
+                    border-right: 0;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    right: 1px;
+                    top: -24px;
+                    .transition(all 0.218s ease);
+                }
+
+            &.complete {
+                background: @whitesmoke;
+                color: @carbon;
+
+                &:before {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: -1px;
+                    height: 2px;
+                    max-height: 2px;
+                    overflow: hidden;
+                    background-color: @palegreen;
+                    z-index: 10000;
+                }
+
+                &:hover {
+                    background: @ivory;
+                    cursor: pointer;
+
+                    .chevron:before {
+                        border-left: 14px solid @ivory;
+                    }
+                }
+
+                .chevron:before {
+                    border-left: 14px solid @whitesmoke;
+                }
+
+                .step {
+                    color: @palegreen;
+                    border-color: @palegreen;
+
+                    &:before {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        line-height: 20px;
+                        text-align: center;
+                        border-radius: 100%;
+                        content: "\f00c";
+                        background-color: @white;
+                        z-index: 3;
+                        font-family: FontAwesome;
+                        font-size: 12px;
+                        color: @palegreen;
+                    }
+                }
+            }
+
+            &.active {
+                background: @white;
+                color: @darkcarbon;
+
+                .step {
+                    border-color: @themeprimary;
+                    color: @themeprimary;
+                }
+
+                &:before {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: -1px;
+                    height: 2px;
+                    max-height: 2px;
+                    overflow: hidden;
+                    background-color: @themeprimary;
+                    z-index: 10000;
+                }
+
+                .chevron:before {
+                    border-left: 14px solid @white;
+                }
+            }
+
+            .badge {
+                margin-right: 8px;
+            }
+        }
+
+            li:first-child {
+                .border-radius(2px 0 0 0);
+                padding-left: 20px;
+            }
+    }
+}
+
+.actions {
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+    line-height: 42px;
+    float: right;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    vertical-align: middle;
+    border-left: 1px solid #d4d4d4;
+
+    a {
+        line-height: 45px;
+        font-size: 12px;
+        margin-right: 8px;
+    }
+
+    .btn-prev {
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    .btn-next {
+        i {
+            margin-left: 5px;
+        }
+    }
+
+    &.actions-footer {
+        margin-top: -10px;
+        position: relative;
+        float: none;
+        text-align: right;
+        border: 0;
+        background-color: @white;
+        .box-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+    }
+}
+
+.step-content {
+    border-top: 0;
+    .border-radius(0 0 2px 2px);
+    padding: 10px;
+    margin-bottom: 10px;
+    .box-shadow(1px 0 10px 1px rgba(0, 0, 0, 0.3));
+    background-color: @snow;
+
+    .step-pane {
+        display: none;
+    }
+
+    .active {
+        display: block;
+
+
+        .btn-group {
+            .active {
+                display: inline-block;
+            }
+        }
+    }
+}
+/*#endregion Wizards*/

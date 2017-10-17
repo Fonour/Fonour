@@ -1,0 +1,163 @@
+﻿/*#region Orders*/
+.orders-container {
+    position: relative;
+    padding: 0px;
+    background-color: @white;
+    .box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    margin-bottom: 30px;
+
+    .orders-header {
+        position: relative;
+        height: 43px;
+        padding: 14px 10px;
+        border-bottom: 1px solid @platinum;
+        background-color: @snow;
+
+        h6 {
+            margin: 0;
+        }
+    }
+
+    .orders-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .order-item {
+            position: relative;
+            padding: 7px 10px;
+            vertical-align: top;
+            border-bottom: 1px solid @platinum;
+
+            &:before {
+                display: none;
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -4px;
+                width: 4px;
+                max-width: 4px;
+                overflow: hidden;
+                background-color: @themeprimary;
+            }
+
+
+            &:hover {
+                background-color: @snow;
+
+                &:before {
+                    display: block;
+                }
+            }
+
+            &.top {
+                &:hover {
+                    &:before {
+                        background-color: @themesecondary;
+                    }
+                }
+
+                .item-more {
+                    color: @themesecondary;
+                }
+            }
+
+            .item-left {
+                padding-right: 0;
+
+                .item-booker {
+                    margin: 6px 0;
+                    color: @storm-cloud;
+                }
+
+
+                .item-time {
+                    font-size: 11px;
+                    margin-bottom: 2px;
+                    color: @darkgray;
+                }
+            }
+
+            .item-right {
+                padding-left: 0;
+                text-align: center;
+
+                .item-price {
+                    font-size: 13px;
+                    margin: 17px auto;
+                    color: @storm-cloud;
+                }
+            }
+
+            .item-more {
+                position: absolute;
+                right: -10px;
+                .calc(top, ~'50% - 13px');
+                width: 25px;
+                height: 25px;
+                font-size: 14px;
+                text-align: center;
+                border-radius: 50%;
+                background-color: @white;
+                border: 3px solid @white;
+                vertical-align: middle;
+                color: @themeprimary;
+                .box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+
+                i {
+                    font-size: 17px;
+                    display: inline-block;
+                    font-family: @fontawesome-font;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+
+                    &:before {
+                        content: "\f105" /*rtl:"\f104"*/; 
+                    }
+                }
+            }
+        }
+    }
+
+    .orders-footer {
+        position: relative;
+        background-color: white;
+        height: 34px;
+        padding: 7px;
+        text-align: center;
+        background-color: @snow;
+
+        a {
+            margin: 0 auto;
+            font-size: 11px;
+            color: @darkgray;
+            font-weight: 500;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .help {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 37px;
+            height: 37px;
+            border-left: 1px solid @platinum;
+            text-align: center;
+            padding: 8px;
+
+            a {
+                i {
+                    font-size: 18px;
+                    color: @gray;
+                }
+            }
+        }
+    }
+}
+/*#endregion Orders*/

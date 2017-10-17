@@ -1,0 +1,158 @@
+﻿/*#region Login Page*/
+.login-container {
+    position: relative;
+    margin: 10% auto;
+    max-width: 300px;
+
+    .loginbox {
+        position: relative;
+        width: 300px !important;
+        height: auto !important;
+        padding: 0 0 20px 0;
+        .box-shadow(0 0 14px rgba(0, 0, 0, 0.1));
+
+        .loginbox-title {
+            position: relative;
+            text-align: center;
+            width: 100%;
+            height: 35px;
+            padding-top: 10px;
+            font-family: 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+            font-size: 20px;
+            font-weight: normal;
+            color: @carbon;
+        }
+
+        .loginbox-social {
+            padding: 0 10px 10px;
+            text-align: center;
+
+            .social-title {
+                font-size: 14px;
+                font-weight: 500;
+                color: darkgray;
+                margin-top: 10px;
+            }
+
+            .social-buttons {
+                height: 80px;
+                padding: 15px 35px;
+                text-align: center;
+
+                .button-facebook {
+                    float: left;
+                    border: 2px solid #3b5998;
+                    color: #3b5998;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 30px;
+                    background-color: @white;
+
+                    i {
+                        font-size: 26px;
+                        line-height: 50px;
+                    }
+                }
+
+                .button-twitter {
+                    float: left;
+                    border: 2px solid #29c1f6;
+                    color: #29c1f6;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 30px;
+                    background-color: @white;
+
+                    i {
+                        font-size: 26px;
+                        line-height: 50px;
+                    }
+                }
+
+                .button-google {
+                    border: 2px solid #ef4f1d;
+                    color: #ef4f1d;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    background-color: @white;
+
+                    i {
+                        font-size: 26px;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+
+        .loginbox-or {
+            position: relative;
+            text-align: center;
+            height: 20px;
+
+            .or {
+                position: absolute;
+                top: 0;
+                .calc(left, ~'50% - 25px');
+                width: 50px;
+                height: 20px;
+                background-color: @white;
+                color: @darkgray;
+                margin: 0 auto;
+            }
+
+            .or-line {
+                position: absolute;
+                height: 1px;
+                top: 10px;
+                left: 40px;
+                right: 40px;
+                background-color: @gray;
+            }
+        }
+
+        .loginbox-textbox {
+            padding: 10px 40px;
+
+            .form-control {
+                .border-radius(3px) !important;
+            }
+        }
+
+        .loginbox-forgot {
+            padding-left: 40px;
+
+            a {
+                font-size: 11px;
+                color: @storm-cloud;
+            }
+        }
+
+        .loginbox-submit {
+            padding: 10px 40px;
+        }
+
+        .loginbox-signup {
+            text-align: center;
+            padding-top: 10px;
+
+            a {
+                font-size: 13px;
+                color: @storm-cloud;
+            }
+        }
+    }
+
+    .logobox {
+        width: 300px !important;
+        height: 50px !important;
+        padding: 5px;
+        margin-top: 15px;
+        .box-shadow(0 0 14px rgba(0, 0, 0, 0.1));
+        background-color: @white;
+        text-align: left;
+    }
+}
+/*#endregion Login Page*/

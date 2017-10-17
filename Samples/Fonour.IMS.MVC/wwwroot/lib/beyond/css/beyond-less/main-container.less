@@ -1,0 +1,21 @@
+﻿.main-container {
+    position: static;
+    padding: 0;
+
+    & > .page-container {
+        position: relative;
+    }
+
+    &:after {
+        background-color: @white;
+        bottom: 0;
+        content: "";
+        display: block;
+        max-width: inherit;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -2;
+        .box-shadow(0 1px 4px @black3);
+    }
+}

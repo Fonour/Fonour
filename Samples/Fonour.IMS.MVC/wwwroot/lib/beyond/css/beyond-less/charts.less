@@ -1,0 +1,139 @@
+﻿/*#region Charts*/
+.chart {
+    height: 220px;
+    margin: 5px;
+}
+
+.chart-sm {
+    height: 100px;
+}
+
+.chart-lg {
+    height: 250px;
+}
+
+.chart-xl {
+    height: 350px;
+}
+
+#flotTip {
+    padding: 3px 5px;
+    background-color: @whitesmoke;
+    z-index: 9999;
+    color: @darkcarbon;
+    .box-shadow(0 1px 8px @black3);
+    font-size: 13px;
+    .border-radius(2px);
+    border: 1px solid @gray;
+
+    span {
+        color: @blue;
+        font-weight: 700;
+    }
+}
+
+.flot-donut-caption {
+    position: absolute;
+    .calc(top, ~'50% - 20px');
+    .calc(left, ~'50% - 25px');
+}
+
+flot-donut-caption .legendLabel span {
+    display: block;
+    margin: 0 5px;
+}
+
+.legendColorBox {
+    padding-left: 10px;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+    .legendColorBox div > div {
+        width: 4px;
+        height: 4px;
+        .box-sizing(content-box);
+    }
+
+
+.morris-hover.morris-default-style {
+    .border-radius(5px);
+    padding: 3px;
+    color: @carbon;
+    background: rgba(255,255,255,.8);
+    border: solid 2px rgba(230,230,230,.8);
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+    .morris-hover.morris-default-style .morris-hover-row-label {
+        font-weight: 700;
+        margin: .25em 0;
+    }
+
+    .morris-hover.morris-default-style .morris-hover-point {
+        white-space: nowrap;
+        margin: .1em 0;
+    }
+
+.morris-hover {
+    position: absolute;
+    z-index: 1001;
+}
+
+
+.has-legend {
+    margin-top: 30px !important;
+}
+
+.has-legend-unique {
+    margin-top: 19px !important;
+}
+
+.easyPieChart {
+    position: relative;
+    text-align: center;
+}
+
+    .easyPieChart canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+.easy-pie-chart {
+    display: inline-block;
+}
+
+    .easy-pie-chart .percent {
+        color: #444;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+.easy-pie-title {
+    display: inline-block;
+    margin: 10px 6px 0;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 100px;
+    height: 19px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.jqstooltip {
+    padding: 7px !important;
+    border-radius: 3px !important;
+    border: 0 !important;
+    background-color: #000 !important;
+    .box-sizing(content-box);
+}
+
+    .jqstooltip .jqsfield {
+        font-family: @main-fonts;
+        font-size: 11px;
+    }
+/*#endregion Charts*/

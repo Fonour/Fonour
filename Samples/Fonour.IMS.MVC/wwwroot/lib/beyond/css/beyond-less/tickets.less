@@ -1,0 +1,138 @@
+﻿/*#region Tickets*/
+.tickets-container {
+    position: relative;
+    padding: 25px 25px;
+    background-color: @whitesmoke;
+
+    .tickets-list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+
+        .ticket-item {
+            position: relative;
+            background-color: @white;
+            .box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+            .border-radius(3px);
+            margin-bottom: 8px;
+            padding: 0 15px;
+            vertical-align: top;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .ticket-user {
+                height: 50px;
+                padding: 10px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
+                .user-avatar {
+                    width: 30px;
+                    height: 30px;
+                    .border-radius(3px);
+                }
+
+                .user-name {
+                    margin-left: 5px;
+                    font-size: 13px;
+                }
+
+                .user-at {
+                    margin-left: 2px;
+                    color: @gray;
+                    font-size: 13px;
+                }
+
+                .user-company {
+                    margin-left: 2px;
+                    color: @darkgray;
+                }
+            }
+
+            .ticket-time {
+                line-height: 30px;
+                height: 50px;
+                padding: 10px;
+
+                i {
+                    color: @gray;
+                }
+
+                .time {
+                    color: @darkgray;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .ticket-type {
+                line-height: 30px;
+                height: 50px;
+                padding: 10px;
+
+                .type {
+                    color: @darkgray;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .ticket-state {
+                position: absolute;
+                top: 13px;
+                right: -12px;
+                height: 24px;
+                width: 24px;
+                .border-radius(50%);
+                background-color: @platinum;
+                text-align: center;
+                .box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+                border: 2px solid @white;
+
+                i {
+                    font-size: 13px;
+                    color: @white;
+                    line-height: 20px;
+                }
+            }
+
+            .divider {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 50px;
+                width: 1px;
+                background-color: @ivory;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .tickets-container {
+        .tickets-list {
+            .ticket-item {
+                .ticket-user {
+                    border-bottom: 1px solid @ivory;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tickets-container {
+        .tickets-list {
+            .ticket-item {
+                .ticket-time {
+                    border-bottom: 1px solid @ivory;
+                }
+            }
+        }
+    }
+}
+/*#endregion Tickets*/

@@ -1,0 +1,67 @@
+﻿/*#region Comment*/
+.comment {
+    padding-top: 12px;
+
+    &:first-child {
+        padding-top: 0;
+    }
+
+    > .comment {
+        margin-left: 25px !important;
+    }
+
+    .comment-avatar {
+        position: relative;
+        .border-radius(3px);
+        display: block;
+        float: left;
+        height: 32px;
+        width: 32px;
+    }
+
+    .comment-header {
+        font-size: 12px;
+        padding-bottom: 2px;
+
+        span {
+            color: @lightgray;
+            display: inline-block;
+            font-size: 11px;
+            margin-left: 5px;
+        }
+    }
+
+    .comment-body {
+        float: none;
+        margin-left: 40px;
+        position: relative;
+    }
+
+    .comment-text {
+        border: 1px solid @platinum;
+        border-radius: 2px;
+        padding: 7px 12px 8px;
+    }
+
+    .comment-footer {
+        display: block;
+        font-size: 12px;
+        padding: 4px 12px 0;
+
+        i {
+            font-size: 13px;
+            margin-right: 7px;
+        }
+
+        &, & a {
+            color: @lightgray;
+        }
+
+        a {
+            &:hover {
+                color: @themeprimary;
+            }
+        }
+    }
+}
+/*#endregion Comment*/

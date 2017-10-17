@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\Abp.EntityFrameworkCore\Abp.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Fonour.IMS.Domain\Fonour.IMS.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

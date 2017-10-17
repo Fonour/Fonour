@@ -1,0 +1,98 @@
+﻿/*#region PopOvers*/
+.popover {
+    .border-radius(3px);
+    padding: 0;
+    border-color: #ccc;
+    border-width: 1px;
+    .box-shadow(0 2px 10px rgba(0,0,0,.2));
+    color: @carbon;
+    background-color: @snow;
+
+    .popover.bottom .arrow:after {
+        top: 1px;
+        margin-left: -10px;
+        border-bottom-color: #f7f7f7;
+        border-top-width: 0;
+    }
+
+    &.inverted {
+        background-color: @darkcarbon;
+        color: @whitesmoke;
+
+        .popover-title {
+            background-color: @darkcarbon;
+            color: @whitesmoke;
+        }
+
+        &.top .arrow:after {
+            border-top-color: @darkcarbon;
+        }
+
+        &.bottom .arrow:after {
+            border-bottom-color: @darkcarbon;
+        }
+
+        &.left .arrow:after {
+            border-left-color: @darkcarbon;
+        }
+
+        &.right .arrow:after {
+            border-right-color: @darkcarbon;
+        }
+    }
+
+    &.dark {
+        background-color: @platinum;
+
+        .popover-title {
+            background-color: @platinum;
+        }
+
+        &.top .arrow:after {
+            border-top-color: @platinum;
+        }
+
+        &.bottom .arrow:after {
+            border-bottom-color: @platinum;
+        }
+
+        &.left .arrow:after {
+            border-left-color: @platinum;
+        }
+
+        &.right .arrow:after {
+            border-right-color: @platinum;
+        }
+    }
+}
+
+.popover-title {
+    .border-radius(3px 3px 0 0);
+    color: @black;
+    border-bottom: 3px solid @themeprimary;
+}
+
+.popover-notitle {
+    + .popover {
+        .popover-title {
+            display: none;
+        }
+
+        &.top .arrow:after {
+            border-top-color: @white;
+        }
+
+        &.bottom .arrow:after {
+            border-bottom-color: @white;
+        }
+
+        &.left .arrow:after {
+            border-left-color: @white;
+        }
+
+        &.right .arrow:after {
+            border-left-color: @white;
+        }
+    }
+}
+/*#endregion Popovers*/

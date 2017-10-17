@@ -1,0 +1,129 @@
+﻿/*#region DatePicker*/
+.datepicker {
+    top: 0;
+    left: 0;
+    padding: 4px;
+    margin-top: 1px;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid @gray;
+        border-bottom-color: @black2;
+        position: absolute;
+        top: -7px;
+        left: 6px;
+    }
+
+    &:after {
+        content: '';
+        display: inline-block;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid @white;
+        position: absolute;
+        top: -6px;
+        left: 7px;
+    }
+
+    > div {
+        display: none;
+    }
+
+    table {
+        width: 100%;
+        margin: 0;
+    }
+
+    td,
+    th {
+        text-align: center;
+        font-size: 12px;
+        height: 20px;
+        width: 20px;
+    }
+
+    td {
+        &.day:hover {
+            background: @ivory;
+            cursor: pointer;
+        }
+
+        &.day.disabled {
+            color: @ivory;
+        }
+
+        &.old,
+        &.new {
+            color: @darkgray;
+        }
+
+        &.active,
+        &.active:hover {
+            background-color: @themeprimary;
+            color: @white;
+            .text-shadow(0 -1px 0 rgba(0,0,0,.25));
+        }
+
+        span {
+            display: block;
+            width: 47px;
+            height: 54px;
+            line-height: 54px;
+            float: left;
+            margin: 2px;
+            cursor: pointer;
+
+            &:hover {
+                background: @ivory;
+            }
+
+            &.active {
+                background-color: @themeprimary;
+                color: @white;
+                .text-shadow(0 -1px 0 rgba(0,0,0,.25));
+            }
+
+            &.old {
+                color: @darkgray;
+            }
+        }
+    }
+
+    th {
+        &.switch {
+            width: 175px;
+        }
+
+        &.next,
+        &.prev {
+            font-size: 12px;
+        }
+    }
+
+    thead tr:first-child th {
+        cursor: pointer;
+
+        &:hover {
+            background: @ivory;
+        }
+    }
+    /*.dow {
+		border-top: 1px solid #ddd !important;
+	}*/
+}
+
+.input-append,
+.input-prepend {
+    &.date {
+        .add-on i {
+            display: block;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+/*#endregion DatePicker*/

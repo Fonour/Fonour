@@ -1,0 +1,117 @@
+﻿/*#region Accordion*/
+@accordion-border-color:#d8d8d8;
+@panel-border-top-color:#d5d5d5;
+.accordion {
+    &.spaced {
+        &.panel-group {
+            .panel {
+                + .panel {
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+
+    &.panel-group {
+        border: 1px solid @accordion-border-color;
+        border-top-width: 0;
+
+        .panel {
+            border-radius: 0;
+            border: 0;
+            background-color: @white;
+            box-shadow: none;
+
+            &:last-child {
+                border-bottom-width: 1px;
+            }
+
+            .collapse {
+                background-color: @white;
+            }
+
+            + .panel {
+                margin-top: 0;
+            }
+        }
+
+        .panel-heading {
+            padding: 0;
+
+            + .panel-collapse {
+                .panel-body {
+                    border-top-color: @panel-border-top-color !important;
+                }
+            }
+
+            .accordion-toggle {
+                color: @lightcarbon;
+                background-color: @white;
+                position: relative;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 1;
+                padding: 10px;
+                display: block;
+
+
+                &:after {
+                    .transition(all .218s);
+                    position: absolute;
+                    right: 20px;
+                    top: 8px;
+                    font-family: @fontawesome-font;
+                    font-size: 17px;
+                    font-weight: bold;
+                    content: "\f107";
+                    color: #bebebe;
+                }
+
+                &.collapsed:after {
+                    content: "\f105";
+                }
+
+                &.collapsed {
+                    color: @sonic-silver;
+                    font-weight: normal;
+                    background-color: @white;
+                    .transition(border .218s);
+                    border-bottom: 1px solid @whitesmoke;
+                }
+
+                &:hover {
+                    color: @darkcarbon;
+                    text-decoration: none;
+
+                    > [class*="icon-"]:first-child {
+                        text-decoration: none;
+                    }
+
+                    &:after {
+                        color: @darkcarbon;
+                    }
+                }
+
+                &:focus, &:active {
+                    outline: 0;
+                    text-decoration: none;
+                }
+
+                > [class*="fa-"]:first-child {
+                    width: 16px;
+                }
+            }
+        }
+
+        .panel-body {
+            background-color: @ivory;
+            border-left: 2px solid @ivory;
+            color: @darkcarbon !important;
+        }
+
+        &.no-padding {
+            padding: 0;
+        }
+    }
+}
+/*#endregion Accordions*/

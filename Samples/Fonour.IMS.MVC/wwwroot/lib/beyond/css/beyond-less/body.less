@@ -1,0 +1,25 @@
+﻿
+html {
+    min-height: 100%;
+    position: relative;
+    overflow-x:hidden;
+}
+body {
+    padding-bottom: 0;
+    min-height: 100%;
+    font-family: @main-fonts;
+    font-size: 13px;
+    color: @carbon;
+
+    &:before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-color: @ivory;
+    }
+}
